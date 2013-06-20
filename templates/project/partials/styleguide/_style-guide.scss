@@ -1,0 +1,84 @@
+/**
+ *   Style Guide Partials
+ * 
+ *   The Style Guide for your website.
+ * 
+ *   Build sub folders and partials in this folder, 
+ *   with everything being imported, in casading order,
+ *   into this file.
+ * 
+ *   All styling, non box model, non site specific design properties go here
+ */
+
+@import 'normalize/normalize';
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  & + p {
+    //siblings indentation
+    text-indent: $indent-amount;
+  }
+}
+
+a {
+  text-decoration: underline;
+  //@include link-colors($link-color, $link-hover-color, $link-hover-color, $link-color, $link-hover-color);
+}
+
+blockquote {
+    font-style: italic;
+}
+
+#skip-link, .element-invisible {
+  @include hidden;
+}
+
+// Pagination. Specific to Drupal.
+.item-list {
+  float:left;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  
+  .pager {
+    clear:left;
+    float:left;
+    position:relative;
+    left:50%;
+    text-align:center;  
+    
+    li {
+      display:block;
+      float:left;
+      list-style:none;
+      position:relative;
+      right:50%;
+      margin-right: 1em;
+    }
+  }
+}
+
+form {
+  label {
+    display: block;
+    @include rhythm(0, 0, 1, 0);
+  }
+  input[type='text'], input[type='password'], textarea {
+    width: 100%;
+    @include rhythm(0, 1, 1, 0);
+    padding-left: 1em;
+    padding-right: 1em;
+    @include border-radius($base-line-height, $base-line-height);
+  }
+  .form-item {
+    @include rhythm(0, 0, 0, 4);
+  }
+} 
+
+table {
+  width: 100%;
+  font-size: inherit;
+}

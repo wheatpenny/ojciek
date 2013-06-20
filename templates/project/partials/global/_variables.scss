@@ -1,0 +1,89 @@
+/**
+  *  Breakpoints
+*/
+$bp-tablet: 30em;
+$bp-desktop: 50em;
+$bp-wide: 70em;
+
+
+/**
+  *  Grids and gutters
+*/
+$grids: 3;
+$grids: add-grid(3 5 7 9 at $bp-tablet);
+$grids: add-grid(16 at $bp-desktop);
+
+$gutters: 1/4;
+$gutters: add-gutter(.6 at $bp-tablet);
+$gutters: add-gutter(.35 at $bp-desktop);
+
+
+/**
+  *  Font Size and Line Height for vertical rhythm
+*/
+
+$base-size      : 16px;
+$ratio              : augmented-fourth();
+
+$normpx         : $base-size;
+$medpx          : ms(1);
+$smallpx         : ms(-1);
+$xsmallpx       : ms(-2);
+$xxsmallpx     : ms(-3);
+$xxxsmallpx   : ms(-4);
+$largepx         : ms(2);
+$xlargepx       : ms(3);
+$xxlargepx      : ms(5);
+$xxxlargepx    : ms(8);
+
+$base-font-size:  $normpx;
+$base-line-height: $xsmallpx;
+
+
+/**
+  *  Font Size for Headers
+*/
+$h1-font-size              : $largepx !default;
+$h2-font-size              : $medpx !default;
+$h3-font-size              : $normpx !default;
+$h4-font-size              : $smallpx !default;
+$h5-font-size              : $xsmallpx !default;
+$h6-font-size              : $xxsmallpx !default;
+
+
+/**
+  *  Other font sizes
+*/
+
+
+/**
+  *  Custom Fonts
+*/
+
+
+/**
+  *  Font Stacks
+*/
+$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+
+/**
+  *  Variables for use from the Font Stacks
+  *  Don't call the font stacks directly!
+*/
+$base-font-family: $helvetica;
+
+
+/**
+  *  Colors
+*/
+$background:               #F2F2F2;
+$content-color:            #444;
+
+
+/**
+  *  Sprites
+*/
+ 

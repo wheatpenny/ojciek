@@ -1,0 +1,38 @@
+/**
+ *   No styles are acually here. 
+ * 
+ *   Imports all other files.
+ */
+
+/**
+ *   Base Import
+ *   
+ *   Sets variables, mixins, etc to be used later.
+ */
+@import 'partials/global/base';
+
+/**
+ *   Style Guide
+ * 
+ *   Establishes Normalization and base settings for all markup
+ */
+@import 'partials/styleguide/style-guide';
+
+/**
+ *   Layout controls the basic (responsive) layout
+ * 
+ *   Similar to a basic mockup
+ */
+@import 'partials/layout/layout';
+
+/**
+ *   Design files add site specific styling.
+ */
+@import 'partials/design/design';
+
+/**
+ *   Print styles
+ */
+// @media print {
+//  @import "_print.scss";
+// }
