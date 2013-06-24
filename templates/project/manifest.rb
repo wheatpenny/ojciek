@@ -12,7 +12,6 @@ stylesheet "partials/layout/_layout.scss"
 
 # STYLEGUIDE
 stylesheet "partials/styleguide/_style-guide.scss"
-stylesheet "partials/styleguide/normalize/_normalize.scss"
 
 # DESIGN
 stylesheet "partials/design/_design.scss"
